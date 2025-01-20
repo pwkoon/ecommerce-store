@@ -107,6 +107,28 @@ export const orderType = defineType({
       type: "datetime",
       validation: (Rule) => Rule.required(),
     }),
+    defineField({
+      name: "clerkUserId",
+      title: "Clerk User ID",
+      type: "string",
+      validation: (Rule) => Rule.required(), // Field is required
+    }),
+    defineField({
+      name: "customerName",
+      title: "Customer Name",
+      type: "string",
+      validation: (Rule) => Rule.required(), // Field is required
+    }),
+    defineField({
+      name: "email",
+      title: "Email",
+      type: "string",
+      validation: (Rule) =>
+        Rule.required().regex(
+          /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+          { name: "email" } // Ensures valid email format
+        ),
+    }),
   ],
   preview: {
     select: {
