@@ -11,7 +11,6 @@ import Link from "next/link";
 import Form from "next/form";
 import { PackageIcon, TrolleyIcon } from "@sanity/icons";
 import useBasketStore from "@/store";
-import { useEffect, useState } from "react";
 
 function Header() {
   const { user } = useUser();
