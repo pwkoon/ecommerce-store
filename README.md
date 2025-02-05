@@ -12,6 +12,7 @@ State Management: Zustand
 Live CMS: Sanity/Sanity studio
 Payments: Stripe 
 Deployment: Vercel
+Authenticate: Clerk
 
 Features
 User authentication (sign-up, login, logout)
